@@ -1,0 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comme&family=Josefin+Sans:ital,wght@1,300&family=Kanit&family=Oleo+Script&family=Sigmar&family=Tinos&display=swap');
+
+@import "components/header";
+@import "components/footer";
+
+
+/*pages*/
+
+@import "components/main-index";
+@import "components/programas";
+@import "components/asesorias";
+@import "components/equipo";
+@import "components/contacto";
+
+@import "components/mediaquerys";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

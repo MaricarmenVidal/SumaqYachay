@@ -1,0 +1,131 @@
+@media screen and (max-width:768px) {
+    .div-carousel{
+        padding: 20px ;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mision,
+    .vision{
+        @extend %text;
+        margin: 20px;
+    }
+    .content{
+        p{
+            @extend %text;
+            margin: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'asesoria'
+        'op1'
+        'op2'
+        'op3';
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px, repeat(3, auto);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cards{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .individual-card{
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .contenedor{
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .frase{
+        div{
+            img{
+                visibility: hidden;
+            }
+        }
+    }
+}
+@media screen and (max-width:700px) {
+    .programas-portada{
+        display: grid;
+        grid-template-areas:
+        "img" 
+        "title"
+        "description" 
+        "conoce-mas";
+    
+        grid-template-columns: 300px;
+        grid-template-rows: 300px 90px 10rem 50px;
+        gap: 10px;
+        width: 100%;
+        margin: 50px;
+    }
+    
+    .img-portada{
+        grid-area: img;
+        padding: 20px;
+        img{
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    .title-portada{
+        grid-area: title;
+        @extend %flexbox;
+        p{
+            font-family: nth($font-family,  11);
+            font-size: 40px;
+            color: nth($colores, 4);
+            text-align: center;
+        }
+    }
+    
+    .des-portada{
+        grid-area: description;
+        @extend %flexbox;
+        p{
+            font-family: nth($font-family,  11);
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+    
+    .conoce-mas{
+        grid-area: conoce-mas;
+        @extend %flexbox;
+        background-color: nth($colores, 8);
+        border-radius: 30px;
+        width: 50%;
+        height: 40px;
+        margin: auto;
+        a{
+            text-decoration: none;
+            color: nth($colores, 3);
+            font-family: nth($font-family, 2);
+            transition: all 0.5s;
+        }
+        a:hover{
+            transform: scale(1.2);
+        }
+    }
+    
+}

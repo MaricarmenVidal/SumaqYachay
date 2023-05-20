@@ -1,0 +1,146 @@
+.header-container{
+    position:fixed;
+    top: 0px;
+    width:100%;
+    z-index: 1;
+}
+.img{
+    width: 80px;
+}
+.background{
+    background-color: #DFE1E1;
+    width: 100%;
+}
+.foto-principal{
+    width: 100%;
+    padding-top: 95px;
+}
+.questions{
+    background-color: #DFE1E1;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 130%;
+    padding: 10px 10px;
+    text-align: center;
+}
+.foto-grupal{
+    width: 100%;
+    padding: 10px 10px;
+}
+.description{
+    text-align: justify;
+    padding: 20px;
+}
+.footer{
+    background-color: #DFE1E1;   
+}
+.Seguir{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.social-media{
+    display:flex;
+    justify-content: space-around;
+}
+.img-2{
+    width: 40px;
+}
+.instagram,
+.facebook{
+    text-align: center;
+}
+
+
+.title{
+    background-color:#d698da;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 170%;
+    text-align: center;
+    padding-top:110px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.title-2{
+    background-color:#d698da;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 170%;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 5px;
+}
+.div-general{
+    padding: 10px;
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'asesoria asesoria asesoria'
+    'op1 op2 op3';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px, auto;
+}
+
+.opciones-asesoria{
+    grid-area: asesoria;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.op1{
+    grid-area: op1;
+    width: 100%;
+    padding: 5px;
+}
+.op2{
+    grid-area: op2;
+    width: 100%;
+    padding: 5px;
+}
+.op3{
+    grid-area: op3;
+    width: 100%;
+    padding: 5px;
+}
+
+.p1,
+.p2,
+.p3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width:480px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'asesoria'
+        'op1'
+        'op2'
+        'op3';
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px, repeat(3, auto);
+    }
+}
+h4{
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+

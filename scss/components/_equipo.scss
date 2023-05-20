@@ -1,0 +1,18 @@
+@import "header";
+
+.title-equipo{
+    padding-top: 90px;
+    padding-left:10px;
+    padding-right:10px; 
+    @extend %title;
+}
+
+.cards{
+    padding: 5px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.individual-card{
+    margin: 20px;
+}

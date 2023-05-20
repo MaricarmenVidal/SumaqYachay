@@ -1,0 +1,38 @@
+@import "../base/listas";
+@import "../base/extends";
+
+header{
+        position:fixed;
+        top: 0px;
+        width:100%;
+        z-index: 1;
+
+    nav{
+            /**background-color: nth($colores, 1);**/
+            background-color: white;
+            border-bottom: 1px solid black;
+
+            width: 100%;
+            
+            a{
+                
+                img{
+                    width: 50px;
+                }
+            
+            }
+            
+        }
+    .background{
+        /*background-color: nth($colores, 1);*/
+        background-color: white;
+        width: 100%;
+        @extend %flexbox;
+
+        a{
+            font-family: nth($font-family, 5);
+                font-size: 130%;
+        }
+    }
+
+}

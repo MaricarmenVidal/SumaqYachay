@@ -1,0 +1,36 @@
+%flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%text {
+    text-align: justify;
+    font-family: nth($font-family,  11);
+    font-size: 120%;
+}
+
+%title {
+    background-color:#d698da;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 170%;
+    text-align: center;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+%subtitles {
+    text-align: center;
+    padding: 15px;
+}
+
+%grilla-asesorias {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+%grilla-div {
+    width: 100%;
+    padding: 5px;
+}

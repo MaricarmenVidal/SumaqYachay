@@ -1,0 +1,60 @@
+@import "header";
+@import "../base/extends";
+@import "../base/listas";
+
+div{
+    h4{
+        @extend %subtitles;
+    }
+}
+
+.opciones-asesoria{
+    h5{
+        @extend %subtitles;
+        
+    }
+}
+
+.div-general{
+    padding: 10px;
+    width: 100%;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'asesoria asesoria asesoria'
+    'op1 op2 op3';
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px, auto;
+}
+
+.opciones-asesoria{
+    grid-area: asesoria;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.op1{
+    grid-area: op1;
+    @extend %grilla-div;
+}
+.op2{
+    grid-area: op2;
+    @extend %grilla-div;
+}
+.op3{
+    grid-area: op3;
+    @extend %grilla-div;
+}
+
+.p1{
+    @extend %grilla-asesorias;
+}
+.p2{
+    @extend %grilla-asesorias;
+}
+.p3{
+    @extend %grilla-asesorias;
+}
+

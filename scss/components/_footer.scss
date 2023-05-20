@@ -1,0 +1,32 @@
+.footer{
+    background-color: #DFE1E1;  
+
+    .Seguir{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: blue;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .social-media{
+        display:flex;
+        justify-content: space-around;
+
+        .instagram,
+        .facebook{
+            text-align: center;
+
+            .img-2{
+                width: 40px;
+            }
+            p{
+                font-family: nth($font-family, 5);
+            }
+        }
+    }
+}
+
+
+

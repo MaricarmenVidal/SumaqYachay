@@ -1,0 +1,42 @@
+@import "header";
+@import "../base/extends";
+@import "../base/listas";
+
+.content{
+    p{
+        @extend %text;
+        margin: 20px 70px 20px 70px;
+        transition: all 0.5s;
+    }
+}
+
+.title{
+    padding-top: 90px;
+    @extend %title;
+
+    p{
+        transition: all 0.5s;
+    }
+    p:hover{
+        transform: scale(1.2);
+    }
+}
+
+
+.title-2{
+    padding: 10px;
+    @extend %title;
+
+    p{
+        transition: all 0.5s;
+    }
+    p:hover{
+        transform: scale(1.2);
+    }
+}
+
+.div-carousel{
+    padding: 20px 80px;
+}
+
+@import "footer";

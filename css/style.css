@@ -62,32 +62,76 @@ header .background a {
   font-size: 130%;
 }
 
-.footer {
-  background-color: #DFE1E1;
+footer {
+  background-color: black;
+  padding: 20px;
+  margin: auto;
 }
-.footer .Seguir {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer .ft-sy p {
+  color: #f2f2f2;
+  font-size: 35px;
+  font-family: "Tinos";
+  text-align: center;
+}
+footer .footer .ft-slogan p {
+  color: #f2f2f2;
   font-size: 20px;
-  color: blue;
+  font-family: "Tinos";
+  text-align: center;
+}
+footer .footer .Seguir {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  color: #f2f2f2;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.footer .social-media {
+footer .footer .social-media {
   display: flex;
   justify-content: space-around;
 }
-.footer .social-media .instagram,
-.footer .social-media .facebook {
+footer .footer .social-media .instagram,
+footer .footer .social-media .facebook,
+footer .footer .social-media .tiktok {
   text-align: center;
 }
-.footer .social-media .instagram .img-2,
-.footer .social-media .facebook .img-2 {
+footer .footer .social-media .instagram .img-2,
+footer .footer .social-media .facebook .img-2,
+footer .footer .social-media .tiktok .img-2 {
   width: 40px;
 }
-.footer .social-media .instagram p,
-.footer .social-media .facebook p {
-  font-family: "Tinos";
+footer .footer .social-media .instagram p,
+footer .footer .social-media .facebook p,
+footer .footer .social-media .tiktok p {
+  font-family: "Josefin Sans";
+  color: #f2f2f2;
+}
+footer .footer .ft-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+footer .footer .ft-section2 .involucrate p,
+footer .footer .ft-section2 .ft-conoce-mas p {
+  color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+footer .footer .ft-section2 .involucrate a,
+footer .footer .ft-section2 .ft-conoce-mas a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 10px;
+  text-align: center;
 }
 
 /*pages*/
@@ -292,11 +336,8 @@ header .background a {
 }
 
 .section-programas {
-  width: 90%;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: fit-content;
+  margin: 30px auto;
 }
 
 .programas-portada {
@@ -516,32 +557,76 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
   padding: 20px 80px;
 }
 
-.footer {
-  background-color: #DFE1E1;
+footer {
+  background-color: black;
+  padding: 20px;
+  margin: auto;
 }
-.footer .Seguir {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+footer .footer {
+  display: flex;
+  justify-content: space-around;
+}
+footer .footer .ft-sy p {
+  color: #f2f2f2;
+  font-size: 35px;
+  font-family: "Tinos";
+  text-align: center;
+}
+footer .footer .ft-slogan p {
+  color: #f2f2f2;
   font-size: 20px;
-  color: blue;
+  font-family: "Tinos";
+  text-align: center;
+}
+footer .footer .Seguir {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  color: #f2f2f2;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.footer .social-media {
+footer .footer .social-media {
   display: flex;
   justify-content: space-around;
 }
-.footer .social-media .instagram,
-.footer .social-media .facebook {
+footer .footer .social-media .instagram,
+footer .footer .social-media .facebook,
+footer .footer .social-media .tiktok {
   text-align: center;
 }
-.footer .social-media .instagram .img-2,
-.footer .social-media .facebook .img-2 {
+footer .footer .social-media .instagram .img-2,
+footer .footer .social-media .facebook .img-2,
+footer .footer .social-media .tiktok .img-2 {
   width: 40px;
 }
-.footer .social-media .instagram p,
-.footer .social-media .facebook p {
-  font-family: "Tinos";
+footer .footer .social-media .instagram p,
+footer .footer .social-media .facebook p,
+footer .footer .social-media .tiktok p {
+  font-family: "Josefin Sans";
+  color: #f2f2f2;
+}
+footer .footer .ft-section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px;
+}
+footer .footer .ft-section2 .involucrate p,
+footer .footer .ft-section2 .ft-conoce-mas p {
+  color: #f2f2f2;
+  font-size: 25px;
+  text-align: center;
+  margin: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+footer .footer .ft-section2 .involucrate a,
+footer .footer .ft-section2 .ft-conoce-mas a {
+  text-decoration: none;
+  color: #f2f2f2;
+  margin: 10px;
+  text-align: center;
 }
 
 header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
@@ -921,6 +1006,13 @@ header .background a {
   }
   .conoce-mas a:hover {
     transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 * {

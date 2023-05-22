@@ -1,58 +1,4 @@
-@media screen and (max-width:768px) {
-    .div-carousel{
-        padding: 20px ;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .mision,
-    .vision{
-        @extend %text;
-        margin: 20px;
-    }
-    .content{
-        p{
-            @extend %text;
-            margin: 30px;
-        }
-    }
-}
-
-@media screen and (max-width:600px) {
-    .grid-container{
-        display: grid;
-        grid-template-areas: 
-        'asesoria'
-        'op1'
-        'op2'
-        'op3';
-        grid-template-columns: 1fr;
-        grid-template-rows: 80px, repeat(3, auto);
-    }
-}
-
-@media screen and (max-width:600px) {
-    .cards{
-        padding: 20px;
-        text-align: center;
-        width: 100%;
-    }
-    .individual-card{
-        text-align: center;
-        padding: 20px;
-        width: 100%;
-        margin: auto;
-    }
-    
-}
-@media screen and (max-width:600px) {
-    .contenedor{
-        width: 80%;
-        margin: auto;
-    }
-
-}
-
+/*index*/
 @media screen and (max-width:600px) {
     .frase{
         div{
@@ -130,7 +76,23 @@
     
 }
 
+/*equipo*/
 
+@media screen and (max-width:700px) {
+    .section-mision-vision{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+
+        div{
+            width: 70%;
+            margin: 20px auto;
+        }
+    }
+}
+
+/*footer*/
 @media screen and (max-width:1000px) {
     .footer{
         display: flex;
@@ -138,3 +100,59 @@
         justify-content: center;
     }
 }
+
+@media screen and (max-width:768px) {
+    .div-carousel{
+        padding: 20px ;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mision,
+    .vision{
+        @extend %text;
+        margin: 20px;
+    }
+    .content{
+        p{
+            @extend %text;
+            margin: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .grid-container{
+        display: grid;
+        grid-template-areas: 
+        'asesoria'
+        'op1'
+        'op2'
+        'op3';
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px, repeat(3, auto);
+    }
+}
+/*
+@media screen and (max-width:600px) {
+    .cards{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .individual-card{
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+}*/
+@media screen and (max-width:600px) {
+    .contenedor{
+        width: 80%;
+        margin: auto;
+    }
+
+}
+

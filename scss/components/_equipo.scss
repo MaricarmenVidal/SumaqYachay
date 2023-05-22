@@ -1,18 +1,165 @@
-@import "header";
+
 
 .title-equipo{
-    padding-top: 90px;
+    padding-top: 100px;
     padding-left:10px;
     padding-right:10px; 
     @extend %title;
 }
 
+.intro-equipo{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .quienes-somos{
+
+        font-family: nth($font-family, 11);
+        text-align: center;
+        font-size: 23px;
+        width: 70%;
+        margin: 20px auto;
+
+        .bold{
+        color: nth($colores, 6);
+    }
+    }
+}
+
+.section-mision-vision{
+
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+
+    div{
+        background-color: nth($colores, 6);
+        margin: 0 20px;
+        border-radius: 20px;
+        width: 40%;
+        h3{
+            font-family: nth($font-family, 5);
+            font-size: 30px;
+            color: nth($colores, 1);
+            text-align: center;
+            padding: 10px;
+
+        }
+        p{
+            font-family: nth($font-family, 5);
+            font-size: 20px;
+            color: nth($colores, 1);
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+
 .cards{
     padding: 5px 20px;
-    text-align: center;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .individual-card{
-    margin: 20px;
+    margin: 20px 20px;
+    border-radius: 15px;
+    img{
+        border-radius: 15px;
+        width: 100%;
+    }
+}
+
+.card-texto-nombre{
+    font-family: nth($font-family, 9);
+    font-size: 25px;
+    text-align: center;
+}
+.card-texto{
+    font-family: nth($font-family, 9);
+    font-size: 15px;
+    text-align: justify;
+}
+
+.postular{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    .ser-parte{
+
+        p{
+            text-align: center;
+            font-family: nth($font-family,  11);
+            font-size: 20px;
+            color: white;
+            box-sizing: border-box;
+            width: 300px;
+        }
+    }
+    .boton-postular{
+        border: 3px solid white;
+        width: 120px;
+        padding: 5px;
+        margin: auto;
+
+        a{
+            text-decoration: none;
+            text-align: center;
+            color:nth($colores, 3);
+            font-family: nth($font-family, 11);
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+}
+
+.areas-container{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+    .areas{
+        width: 330px;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        margin: 20px;
+        text-align: center;
+        transition: all, 0.25s;
+        padding: 10px;
+
+        img{
+            width: 100%;
+        }
+        h4{
+            font-size: 1.8rem;
+            font-family: nth($font-family, 13);
+            padding: 10px 15px;
+        }
+        p{
+            font-size: 1rem;
+            font-family: nth($font-family, 13);
+            padding: 15px;
+        }
+        a{
+            font-size: 1rem;
+            font-family: nth($font-family, 13);
+            padding: 15px;
+            text-decoration: none;
+            color: nth($colores, 6);
+        }
+    }
+
+    .areas:hover{
+        transform: translateY(-15px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    }
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Comme&family=Josefin+Sans:ital,wght@1,300&family=Kanit&family=Oleo+Script&family=Sigmar&family=Tinos&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comme&family=Josefin+Sans:ital,wght@1,300&family=Kanit&family=Mukta:wght@600&family=Oleo+Script&family=Sigmar&family=Tinos&display=swap");
 .conoce-mas, .des-portada, .title-portada, .section-frase, header .background {
   display: flex;
   justify-content: center;
@@ -13,9 +13,8 @@
 }
 
 .title-equipo, .title-2, .title {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -116,22 +115,28 @@ footer .footer .ft-section2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25px;
+  width: fit-content;
 }
-footer .footer .ft-section2 .involucrate p,
-footer .footer .ft-section2 .ft-conoce-mas p {
+footer .footer .ft-section2 .involucrate div,
+footer .footer .ft-section2 .ft-conoce-mas div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .ft-section2 .involucrate div p,
+footer .footer .ft-section2 .ft-conoce-mas div p {
   color: #f2f2f2;
   font-size: 25px;
-  text-align: center;
   margin: 10px;
+  text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-footer .footer .ft-section2 .involucrate a,
-footer .footer .ft-section2 .ft-conoce-mas a {
+footer .footer .ft-section2 .involucrate div a,
+footer .footer .ft-section2 .ft-conoce-mas div a {
   text-decoration: none;
   color: #f2f2f2;
-  margin: 10px;
   text-align: center;
+  margin: 10px;
 }
 
 /*pages*/
@@ -149,9 +154,8 @@ footer .footer .ft-section2 .ft-conoce-mas a {
 }
 
 .title-equipo, .title-2, .title {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -410,10 +414,6 @@ footer .footer .ft-section2 .ft-conoce-mas a {
   text-align: center;
 }
 
-.bold {
-  color: #849494;
-}
-
 .mision,
 .vision {
   margin: 20px 70px 20px 70px;
@@ -441,9 +441,8 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
 }
 
 .title-equipo, .title-2, .title {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -504,9 +503,8 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
 }
 
 .title-equipo, .title-2, .title {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -611,22 +609,28 @@ footer .footer .ft-section2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25px;
+  width: fit-content;
 }
-footer .footer .ft-section2 .involucrate p,
-footer .footer .ft-section2 .ft-conoce-mas p {
+footer .footer .ft-section2 .involucrate div,
+footer .footer .ft-section2 .ft-conoce-mas div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer .ft-section2 .involucrate div p,
+footer .footer .ft-section2 .ft-conoce-mas div p {
   color: #f2f2f2;
   font-size: 25px;
-  text-align: center;
   margin: 10px;
+  text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-footer .footer .ft-section2 .involucrate a,
-footer .footer .ft-section2 .ft-conoce-mas a {
+footer .footer .ft-section2 .involucrate div a,
+footer .footer .ft-section2 .ft-conoce-mas div a {
   text-decoration: none;
   color: #f2f2f2;
-  margin: 10px;
   text-align: center;
+  margin: 10px;
 }
 
 header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
@@ -643,9 +647,8 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
 }
 
 .title-equipo, .title, .title-2 {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -706,9 +709,8 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
 }
 
 .title-equipo, .title, .title-2 {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -761,83 +763,152 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
   grid-area: op3;
 }
 
-header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mision,
-.vision, .description, .content p {
-  text-align: justify;
-  font-family: "Kanit";
-  font-size: 120%;
-}
-
-.title-equipo, .title, .title-2 {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
-  text-align: center;
-  padding-bottom: 5px;
-  width: 100%;
-}
-
-div h4, .opciones-asesoria h5 {
-  text-align: center;
-  padding: 15px;
-}
-
-.p1, .p2, .p3 {
-  display: flex;
-  justify-content: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.op1, .op2, .op3 {
-  width: 100%;
-  padding: 5px;
-}
-
-header {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 1;
-}
-header nav {
-  /**background-color: nth($colores, 1);**/
-  background-color: white;
-  border-bottom: 1px solid black;
-  width: 100%;
-}
-header nav a img {
-  width: 50px;
-}
-header .background {
-  /*background-color: nth($colores, 1);*/
-  background-color: white;
-  width: 100%;
-}
-header .background a {
-  font-family: "Tinos";
-  font-size: 130%;
-}
-
 .title-equipo {
-  padding-top: 90px;
+  padding-top: 100px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
+.intro-equipo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro-equipo .quienes-somos {
+  font-family: "Kanit";
+  text-align: center;
+  font-size: 23px;
+  width: 70%;
+  margin: 20px auto;
+}
+.intro-equipo .quienes-somos .bold {
+  color: #6B83D1;
+}
+
+.section-mision-vision {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+.section-mision-vision div {
+  background-color: #6B83D1;
+  margin: 0 20px;
+  border-radius: 20px;
+  width: 40%;
+}
+.section-mision-vision div h3 {
+  font-family: "Tinos";
+  font-size: 30px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+.section-mision-vision div p {
+  font-family: "Tinos";
+  font-size: 20px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+
 .cards {
   padding: 5px 20px;
-  text-align: center;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .individual-card {
+  margin: 20px 20px;
+  border-radius: 15px;
+}
+.individual-card img {
+  border-radius: 15px;
+  width: 100%;
+}
+
+.card-texto-nombre {
+  font-family: "Comme";
+  font-size: 25px;
+  text-align: center;
+}
+
+.card-texto {
+  font-family: "Comme";
+  font-size: 15px;
+  text-align: justify;
+}
+
+.postular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+.postular .ser-parte p {
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 20px;
+  color: white;
+  box-sizing: border-box;
+  width: 300px;
+}
+.postular .boton-postular {
+  border: 3px solid white;
+  width: 120px;
+  padding: 5px;
+  margin: auto;
+}
+.postular .boton-postular a {
+  text-decoration: none;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Kanit";
+  display: flex;
+  justify-content: center;
+}
+
+.areas-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.areas-container .areas {
+  width: 330px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   margin: 20px;
+  text-align: center;
+  transition: all, 0.25s;
+  padding: 10px;
+}
+.areas-container .areas img {
+  width: 100%;
+}
+.areas-container .areas h4 {
+  font-size: 1.8rem;
+  font-family: "Mukta";
+  padding: 10px 15px;
+}
+.areas-container .areas p {
+  font-size: 1rem;
+  font-family: "Mukta";
+  padding: 15px;
+}
+.areas-container .areas a {
+  font-size: 1rem;
+  font-family: "Mukta";
+  padding: 15px;
+  text-decoration: none;
+  color: #6B83D1;
+}
+.areas-container .areas:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
@@ -854,9 +925,8 @@ header .background, .section-frase, .title-portada, .des-portada, .conoce-mas {
 }
 
 .title, .title-2, .title-equipo {
-  background-color: #d698da;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 170%;
+  font-family: "Mukta";
+  font-size: 70px;
   text-align: center;
   padding-bottom: 5px;
   width: 100%;
@@ -908,47 +978,7 @@ header .background a {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  .div-carousel {
-    padding: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mision,
-  .vision {
-    margin: 20px;
-  }
-  .content p {
-    margin: 30px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .grid-container {
-    display: grid;
-    grid-template-areas: "asesoria" "op1" "op2" "op3";
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px, repeat(3, auto);
-  }
-}
-@media screen and (max-width: 600px) {
-  .cards {
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-  }
-  .individual-card {
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin: auto;
-  }
-}
-@media screen and (max-width: 600px) {
-  .contenedor {
-    width: 80%;
-    margin: auto;
-  }
-}
+/*index*/
 @media screen and (max-width: 600px) {
   .frase div img {
     visibility: hidden;
@@ -1008,11 +1038,68 @@ header .background a {
     transform: scale(1.2);
   }
 }
+/*equipo*/
+@media screen and (max-width: 700px) {
+  .section-mision-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+  }
+  .section-mision-vision div {
+    width: 70%;
+    margin: 20px auto;
+  }
+}
+/*footer*/
 @media screen and (max-width: 1000px) {
   .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .div-carousel {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mision,
+  .vision {
+    margin: 20px;
+  }
+  .content p {
+    margin: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas: "asesoria" "op1" "op2" "op3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px, repeat(3, auto);
+  }
+}
+/*
+@media screen and (max-width:600px) {
+    .cards{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    .individual-card{
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        margin: auto;
+    }
+
+}*/
+@media screen and (max-width: 600px) {
+  .contenedor {
+    width: 80%;
+    margin: auto;
   }
 }
 * {

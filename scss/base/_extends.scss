@@ -7,25 +7,23 @@
 %text {
     text-align: justify;
     font-family: nth($font-family,  11);
-    font-size: 120%;
+    font-size: 22px;
 }
 
 %title {
     font-family: nth($font-family, 13);
-    font-size: 70px;
+    font-size: 65px;
     text-align: center;
     padding-bottom: 5px;
     width: 100%;
 }
 
-%subtitles {
-    text-align: center;
-    padding: 15px;
-}
-
 %grilla-asesorias {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 

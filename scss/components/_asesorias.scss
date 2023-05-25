@@ -2,15 +2,51 @@
 @import "../base/extends";
 @import "../base/listas";
 
-div{
+.title-asesorias{
+    padding-top: 85px;
+    padding-bottom: 20px;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/title-asesorias.png);
+	background-position: center;
+	background-size: cover; 
+
+
+    h4{    
+        @extend %title;
+        transition: all 0.5s;
+        color: white;
+    }
+    h4:hover{
+        transform: scale(1.2);
+    }
+
+}
+
+.asesorias{    
+    padding: 10px;
+    width: 100%;
     h4{
-        @extend %subtitles;
+        text-align: center;
+        font-family: nth($font-family, 13);
+        font-size: 30px;
+        padding: 15px;
+        color: nth($colores, 6)
+    }
+    p{
+        @extend %text;
     }
 }
 
+
+
+
 .opciones-asesoria{
     h5{
-        @extend %subtitles;
+        text-align: center;
+        font-family: nth($font-family, 13);
+        font-size: 25px;
+        padding: 15px;
         
     }
 }
@@ -18,43 +54,55 @@ div{
 .div-general{
     padding: 10px;
     width: 100%;
-}
-.grid-container{
+
+    
+
+    .grid-container{
     display: grid;
     grid-template-areas: 
     'asesoria asesoria asesoria'
     'op1 op2 op3';
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 80px, auto;
-}
-
-.opciones-asesoria{
+    }
+    
+    .opciones-asesoria{
     grid-area: asesoria;
     display: flex;
     justify-content: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .op1{
+        grid-area: op1;
+        @extend %grilla-div;
+    }
+    .op2{
+        grid-area: op2;
+        @extend %grilla-div;
+    }
+    .op3{
+        grid-area: op3;
+        @extend %grilla-div;
+    }
+
+    .p1{
+        @extend %grilla-asesorias;
+    }
+    .p2{
+        @extend %grilla-asesorias;
+    }
+    .p3{
+        @extend %grilla-asesorias;
+    }
 }
 
-.op1{
-    grid-area: op1;
-    @extend %grilla-div;
-}
-.op2{
-    grid-area: op2;
-    @extend %grilla-div;
-}
-.op3{
-    grid-area: op3;
-    @extend %grilla-div;
+.formulario{
+    padding: 20px;
+    width: 100%;
+    h4{
+        text-align: center;
+    }
 }
 
-.p1{
-    @extend %grilla-asesorias;
-}
-.p2{
-    @extend %grilla-asesorias;
-}
-.p3{
-    @extend %grilla-asesorias;
-}
 

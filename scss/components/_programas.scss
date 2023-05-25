@@ -1,42 +1,84 @@
-@import "header";
 @import "../base/extends";
 @import "../base/listas";
 
+.title-programas{
+    padding-top: 85px;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/title-programas.jpg);
+	background-position: center;
+	background-size: cover; 
+
+
+    h4{    
+        @extend %title;
+        transition: all 0.5s;
+        color: white;
+    }
+    h4:hover{
+        transform: scale(1.2);
+    }
+
+    p{
+        text-align: center;
+        font-family: nth($font-family,  11);
+        font-size: 20px;
+        color: white;
+        padding: 20px
+    }
+}
+.descrip-programas{
+    font-family: nth($font-family, 11);
+    text-align: center;
+    font-size: 23px;
+    width: 70%;
+    margin: 40px auto;
+
+    .bold{
+    color: nth($colores, 6);
+    }
+}
+
+.banner{
+    width: 100%;
+    height: 150px;
+    background-color: nth($colores, 6);
+    margin: 0;
+    @extend %flexbox;
+
+
+    p{
+        text-align: center;
+        font-family: nth($font-family,  11);
+        font-size: 40px;
+        color: white;
+        box-sizing: border-box;
+        width: 500px;
+    }
+
+
+}
+
+.questions{
+    background-color: nth($colores, 1);
+    font-family: nth($font-family, 1);
+    font-size: 2rem;
+    padding: 10px 10px;
+    text-align: center;
+}
+
 .content{
+    padding: 20px 70px;
     p{
         @extend %text;
-        margin: 20px 70px 20px 70px;
-        transition: all 0.5s;
-    }
-}
-
-.title{
-    padding-top: 90px;
-    @extend %title;
-
-    p{
-        transition: all 0.5s;
-    }
-    p:hover{
-        transform: scale(1.2);
     }
 }
 
 
-.title-2{
-    padding: 10px;
-    @extend %title;
 
-    p{
-        transition: all 0.5s;
-    }
-    p:hover{
-        transform: scale(1.2);
-    }
-}
+
 
 .div-carousel{
     padding: 20px 80px;
 }
 
-@import "footer";

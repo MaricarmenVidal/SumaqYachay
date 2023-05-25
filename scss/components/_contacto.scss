@@ -1,6 +1,46 @@
-@import "header";
+@import "../base/extends";
+@import "../base/listas";
 
+.title-contacto{
+    padding-top: 85px;
+    padding-bottom: 20px;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/title-contacto.jpg);
+	background-position: center;
+	background-size: cover; 
+
+
+    h4{    
+        font-family: nth($font-family, 13);
+        font-size: 45px;
+        text-align: center;
+        padding-bottom: 5px;
+        color: white;
+        transition: all 0.5s;
+        
+    }
+    h4:hover{
+        transform: scale(1.2);
+    }
+
+}
 .div-contacto{
     padding: 25px;
-    width: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+
+    .boton{
+        background-color: nth($colores, 6);
+        border-radius: 15px;
+        width: fit-content;
+        color: nth($colores, 3);
+        border: none;
+        padding: 10px 15px;
+    }
 }
+
+
